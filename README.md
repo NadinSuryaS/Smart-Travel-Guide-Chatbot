@@ -17,11 +17,15 @@ With an elegant and responsive design, this chatbot combines modern UI with an i
 ---
 
 ## 🧰 Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript  
-- **Icons & Fonts:** Font Awesome, Google Fonts  
-- **AI Model:** Google Gemini API (integrated placeholder)  
-- **Design:** Gradient themes, card-based layout, and micro-interactions
-
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7E017?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Font%20Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Google%20Fonts-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenAI%20%7C%20Gemini-8A2BE2?style=for-the-badge&logo=openai&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub%20Pages-181717?style=for-the-badge&logo=githubpages&logoColor=white"/>
+</p>
 ---
 
 ## 📂 Project Structure
