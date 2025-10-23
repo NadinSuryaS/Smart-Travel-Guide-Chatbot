@@ -25,3 +25,4 @@ With an elegant and responsive design, this chatbot combines modern UI with an i
 ---
 
 ## 📂 Project Structure
+![image alt](travel guide bot.jpg)
