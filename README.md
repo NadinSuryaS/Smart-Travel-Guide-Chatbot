@@ -25,4 +25,4 @@ With an elegant and responsive design, this chatbot combines modern UI with an i
 ---
 
 ## 📂 Project Structure
-![image alt](travel guide bot.jpg)
+![image alt](https://github.com/NadinSuryaS/Smart-Travel-Guide-Chatbot/blob/80fa30c074b9ddfb3ce95a10a197a8de3dcd917e/travel%20guide%20bot.jpg)
