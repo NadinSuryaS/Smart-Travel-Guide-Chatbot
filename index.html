@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel Guide Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-plane-departure"></i>
+                    <h1>Smart Travel Guide</h1>
+                </div>
+                <p class="tagline">Your AI-powered travel companion</p>
+            </div>
+        </header>
+
+        <!-- Suggestions Sidebar -->
+        <aside class="suggestions-sidebar" id="suggestionsSidebar">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-lightbulb"></i> Quick Questions</h3>
+                <button class="toggle-sidebar" id="toggleSidebar">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            
+            <div class="sidebar-content">
+                <!-- Destination Information -->
+                <div class="suggestion-category">
+                    <h4><i class="fas fa-map-marked-alt"></i> Destination Information</h4>
+                    <button class="sidebar-suggestion" data-query="What is famous in Chennai?">
+                        What is famous in Chennai?
+                    </button>
+                    <button class="sidebar-suggestion" data-query="Which are the top places to visit in Goa?">
+                        Which are the top places to visit in Goa?
+                    </button>
+                </div>
+
+                <!-- Tourist Attractions & Places -->
+                <div class="suggestion-category">
+                    <h4><i class="fas fa-umbrella-beach"></i> Tourist Attractions</h4>
+                    <button class="sidebar-suggestion" data-query="What are the best beaches in Kerala?">
+                        What are the best beaches in Kerala?
+                    </button>
+                    <button class="sidebar-suggestion" data-query="Is there any waterfall near Mysore?">
+                        Is there any waterfall near Mysore?
+                    </button>
+                </div>
+
+                <!-- Hotels & Restaurants -->
+                <div class="suggestion-category">
+                    <h4><i class="fas fa-utensils"></i> Hotels & Restaurants</h4>
+                    <button class="sidebar-suggestion" data-query="Show me top restaurants in Chennai.">
+                        Show me top restaurants in Chennai.
+                    </button>
+                    <button class="sidebar-suggestion" data-query="Where can I find vegetarian food in Delhi?">
+                        Where can I find vegetarian food in Delhi?
+                    </button>
+                </div>
+
+                <!-- Transport & Route Assistance -->
+                <div class="suggestion-category">
+                    <h4><i class="fas fa-route"></i> Transport & Routes</h4>
+                    <button class="sidebar-suggestion" data-query="Give me the best route to Manali.">
+                        Give me the best route to Manali.
+                    </button>
+                    <button class="sidebar-suggestion" data-query="Is metro available in Chennai?">
+                        Is metro available in Chennai?
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome Message -->
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-text">
+                            <p>👋 Welcome to Smart Travel Guide!</p>
+                            <p>I'm here to help you plan your perfect trip. I can assist you with:</p>
+                            <ul>
+                                <li>🏙️ Popular destinations and attractions</li>
+                                <li>🏨 Hotel recommendations</li>
+                                <li>🍽️ Restaurant suggestions</li>
+                                <li>✈️ Travel tips and advice</li>
+                            </ul>
+                            <p>Where would you like to explore today?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Suggestions -->
+            <div class="quick-suggestions" id="quickSuggestions">
+                <button class="suggestion-btn" data-query="What are the best places to visit in Paris?">
+                    <i class="fas fa-map-marker-alt"></i> Paris Attractions
+                </button>
+                <button class="suggestion-btn" data-query="Recommend hotels in Tokyo">
+                    <i class="fas fa-hotel"></i> Tokyo Hotels
+                </button>
+                <button class="suggestion-btn" data-query="Best restaurants in New York">
+                    <i class="fas fa-utensils"></i> NYC Restaurants
+                </button>
+                <button class="suggestion-btn" data-query="Travel tips for Bali">
+                    <i class="fas fa-lightbulb"></i> Bali Tips
+                </button>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="userInput" 
+                        placeholder="Ask me about destinations, hotels, restaurants, or travel tips..."
+                        rows="1"
+                    ></textarea>
+                    <button id="sendBtn" class="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <span class="powered-by">Powered by Google Gemini AI</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div class="loading-indicator" id="loadingIndicator">
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
